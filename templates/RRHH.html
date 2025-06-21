@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <title>Consultores MM</title>
+</head>
+<body>
+  <nav class="navbar">
+  <div class="logo">
+    <a href="/#">
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" height="100">
+    </a>
+    <span class="Consultores Group MM S.A.S">Consultores Group MM S.A.S</span>
+  </div>
+  <div class="dropdown">
+    <a>Servicios</a>
+    <div class="dropdown-content">
+      <a href="/RRHH">Recursos Humanos (RRHH)</a>
+      <a href="/SST">Salud y Seguridad en el Trabajo (SST)</a>
+      <a href="/TI">Soporte Técnico (TI)</a>
+    </div>
+  </div>
+  <a href="/trabaja">Trabaja con nosotros</a>
+  <a href="/nosotros">Acerca de nosotros</a>
+  <a href="/contacto">Solicita tu propuesta</a>
+</nav>
+
+<div class="table">
+  <h2>Servicios RRHH</h2>
+  <table class="services-table">
+    <thead>
+      <tr>
+        <th>Consultoría</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <ul>
+            <li>Ofrecemos Asesoramiento y Consultorias</li>
+            <li>Variedad de Temas Relacionados con Recursos Humanos (RRHH)</li>
+            <li>Políticas</li>
+            <li>Procedimientos</li>
+            <li>Evaluaciones de Desempeño</li>
+            <li>Asesoria en Procesos Disciplinarios</li>
+            <li>Resolución de Conflictos</li>
+            <li>Matriz (RRHH)</li>
+            <li>Caracterización</li>
+            <li>Diagramas</li>
+            <li>Manuales</li>
+            <li>Planes de Bienestar</li>
+            <li>Cumplimiento Normativo</li>  
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+</section>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Consultores Group MM S.A.S</h4>
+        <p>Soluciones en Gestión del Talento Humano y SST.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Enlaces</h4>
+        <a href="/#">Inicio</a>
+        <a href="/nosotros">Acerca de nosotros</a>
+        <a href="/trabaja">Trabaja con nosotros</a>
+        <a href="/contacto">Solicita tu propuesta</a>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>Correo: consultorgroupmm@gmail.com</p>
+        <p>Teléfono: +57 316 816 3722</p>
+        <p>Ciudad: Bogotá, Colombia</p>
+        <p>Dirección: Calle 27 Sur # 7-39 </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Consultores Group MM S.A.S. Todos los derechos reservados.
+    </div>
+  </footer>
+</body>
+</html>

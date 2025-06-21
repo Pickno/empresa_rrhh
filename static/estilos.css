@@ -1,0 +1,436 @@
+/* === Global === */
+body {
+  margin: 0;
+  padding-top: 80px;
+  font-family: Arial;
+  background-color: #f0f0f0;
+}
+
+.TConsultores{
+  font-size: 30px;
+  font-family: Arial;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* === Navbar === */
+.navbar {
+  background: linear-gradient(to right, #4d88d6, #4DD6C0);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 5px;
+}
+.dropdown-content {
+  position: absolute;
+  z-index: 1; 
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  position: relative;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  gap: 10px;
+}
+
+.nombre-empresa {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown > a {
+  padding: 14px 16px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 10px;
+  display: none;
+  background-color: #89b8f5;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+/* === Footer === */
+.footer {
+  background-color: #037cec;
+  color: rgb(255, 255, 255);
+  padding: 40px 20px;
+  font-family: 'Arial';
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 0.9rem;
+}
+
+/* === Formulario (contacto) === */
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #037cec;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #037cec;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 95%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #037cec;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* Quitar flechas en inputs tipo número */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #5da9f0;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #037cec;
+}
+
+/* === Página Nosotros / Valores === */
+.container {
+  width: 1250px;
+  margin: 0 auto;
+  padding: 90px 20px 20px;
+  text-align: center;
+}
+
+.title, .subtitle {
+  color: #037cec;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  padding: 15px 20px;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Valores corporativos */
+.valores-corporativos {
+  padding: 80px 20px;
+  font-family: 'Arial';
+}
+
+.valores-corporativos h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #037cec;
+  margin-bottom: 25px;
+}
+
+.valores-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.valor-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.valor-card:hover {
+  transform: scale(1.05);
+}
+
+.valor-icon {
+  font-size: 3rem;
+  color: #037cec;
+  margin-bottom: 15px;
+}
+
+.valor-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #037cec;
+  margin-bottom: 10px;
+}
+
+.valor-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* === Responsivo === */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar nav {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar nav a {
+    margin-left: 0;
+  }
+}
+
+/* enfoque */
+.enfoque img {
+  display: flex;
+  margin-left: 32%;
+  max-width: 70%;
+  max-height: 70vh;
+  height: auto;
+  margin-bottom: 5%;
+}
+
+/* Aliados */
+.aliados {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.slider img {
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.slider-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.nombre-aliado {
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 20px;
+  font-weight: 200;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.aliados a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* tablas */
+.table {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.services-table th,
+.services-table td {
+  vertical-align: top;
+  padding: 10px 15px;
+}
+
+.services-table th {
+  background-color: #e6f2f2;
+  color: #333;
+  font-size: 1.1em;
+}
+
+ul {
+  margin: 0;
+  padding-left: 90px;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+h2 {
+  text-align: center;
+  color: #037cec;
+  margin-bottom: 30px;
+}

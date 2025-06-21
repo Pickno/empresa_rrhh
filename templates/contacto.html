@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+  <title>Formulario de Contacto</title>
+</head>
+<body>
+
+ <nav class="navbar">
+  <div class="logo">
+    <a href="/#">
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" height="100">
+    </a>
+    <span class="Consultores Group MM S.A.S">Consultores Group MM S.A.S</span>
+  </div>
+  <div class="dropdown">
+    <a>Servicios</a>
+    <div class="dropdown-content">
+      <a href="/RRHH">Recursos Humanos (RRHH)</a>
+      <a href="/SST">Salud y Seguridad en el Trabajo (SST)</a>
+      <a href="/TI">Soporte Técnico (TI)</a>
+    </div>
+  </div>
+  <a href="/trabaja">Trabaja con nosotros</a>
+  <a href="/nosotros">Acerca de nosotros</a>
+  <a href="/contacto">Solicita tu propuesta</a>
+</nav>
+
+  <div class="form-container">
+    <h2>Formulario de Solicitud</h2>
+    <form method="POST">
+      <div class="form-group">
+        <label for="correo">Correo:</label>
+        <input type="email" name="correo" id="correo" autocomplete="off" required>
+      </div>
+
+      <div class="form-group">
+        <label for="nit">NIT:</label>
+        <input type="number" name="nit" id="nit" autocomplete="off" required>
+      </div>
+
+      <div class="form-group">
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" name="ciudad" id="ciudad" autocomplete="off" required>
+      </div>
+
+      <div class="form-group">
+        <label for="compania">Compañía:</label>
+        <input type="text" name="compania" id="compania" autocomplete="off" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">Teléfono:</label>
+        <input type="number" name="telefono" id="telefono" autocomplete="off" required>
+      </div>
+
+      <div class="form-group">
+        <label for="servicio">Servicio requerido:</label>
+        <textarea name="servicio" id="servicio" rows="4" placeholder="Describe el servicio que necesitas..." autocomplete="off" required></textarea>
+      </div>      
+
+      <button type="submit" class="submit-btn">Enviar</button>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Consultores Group MM S.A.S</h4>
+        <p>Soluciones en Gestión del Talento Humano y SST.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Enlaces</h4>
+        <a href="/#">Inicio</a>
+        <a href="/nosotros">Acerca de nosotros</a>
+        <a href="/trabaja">Trabaja con nosotros</a>
+        <a href="/contacto">Solicita tu propuesta</a>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>Correo: consultorgroupmm@gmail.com</p>
+        <p>Teléfono: +57 316 816 3722</p>
+        <p>Ciudad: Bogotá, Colombia</p>
+        <p>Dirección: Calle 27 Sur # 7-39 </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Consultores Group MM S.A.S. Todos los derechos reservados.
+    </div>
+  </footer>
+</body>
+</html>

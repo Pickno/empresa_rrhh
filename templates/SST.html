@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <title>Consultores MM</title>
+</head>
+<body>
+  <nav class="navbar">
+  <div class="logo">
+    <a href="/#">
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" height="100">
+    </a>
+    <span class="Consultores Group MM S.A.S">Consultores Group MM S.A.S</span>
+  </div>
+  <div class="dropdown">
+    <a>Servicios</a>
+    <div class="dropdown-content">
+      <a href="/RRHH">Recursos Humanos (RRHH)</a>
+      <a href="/SST">Salud y Seguridad en el Trabajo (SST)</a>
+      <a href="/TI">Soporte Técnico (TI)</a>
+    </div>
+  </div>
+  <a href="/trabaja">Trabaja con nosotros</a>
+  <a href="/nosotros">Acerca de nosotros</a>
+  <a href="/contacto">Solicita tu propuesta</a>
+</nav>
+
+<div class="table">
+  <h2>Servicios SST</h2>
+  <table class="services-table">
+    <thead>
+      <tr>
+        <th>Consultoría</th>
+        <th>Capacitación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <ul>
+            <li>Análisis de Condiciones de Seguridad y Salud en el Trabajo (SST).</li>
+            <li>Análisis de Puestos de Trabajo o APT.</li>
+            <li>Asesoria en Gestión de Riesgos Psicosocial.</li>
+            <li>Asesoria Para la Aplicacion de Recomendaciones Medícas.</li>
+            <li>Batería de Riesgo Psicosocial.</li>
+            <li>Estudio de Carga Física y Psicologica.</li>
+            <li>Evaluacion de Satisfaccion del Cliente.</li>
+            <li>Inspeccion a Puesto de Trabajo.</li>
+            <li>Medición e Intervención de Clima Laboral.</li>
+            <li>Acompañamiento al Simulacro de Emergencia.</li>
+            <li>Elaboración de Planos y Rutas de Evacuacion.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Capacitación Presencial y/o Virtual.</li>
+            <li>Capacitación de Habilidades Blandas.</li>
+            <li>Capacitación Primer Auxilio Psicologico.</li>
+            <li>Capacitación Como Generar Empatia.</li>
+            <li>Capacitación Manejo de Estrés Laborar.</li>
+            <li>Capacitación de Manejo de Inteligencia Emocional.</li>
+            <li>Capacitación Sobre Comunicación Efectiva.</li>
+            <li>Capacitación de Liderazgo.</li>
+            <li>Capacitación de Trabajo en Equipo.</li>
+            <li>Capacitación de Resolución de Conflictos.</li>
+            <li>Capacitación Sobre Manejo y Gestión del Tiempo.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+</section>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Consultores Group MM S.A.S</h4>
+        <p>Soluciones en Gestión del Talento Humano y SST.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Enlaces</h4>
+        <a href="/#">Inicio</a>
+        <a href="/nosotros">Acerca de nosotros</a>
+        <a href="/trabaja">Trabaja con nosotros</a>
+        <a href="/contacto">Solicita tu propuesta</a>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>Correo: consultorgroupmm@gmail.com</p>
+        <p>Teléfono: +57 316 816 3722</p>
+        <p>Ciudad: Bogotá, Colombia</p>
+        <p>Dirección: Calle 27 Sur # 7-39 </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Consultores Group MM S.A.S. Todos los derechos reservados.
+    </div>
+  </footer>
+</body>
+</html>

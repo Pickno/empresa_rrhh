@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <title>Consultores MM</title>
+</head>
+<body>
+  <nav class="navbar">
+  <div class="logo">
+    <a href="/#">
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" height="100">
+    </a>
+    <span class="Consultores Group MM S.A.S">Consultores Group MM S.A.S</span>
+  </div>
+  <div class="dropdown">
+    <a>Servicios</a>
+    <div class="dropdown-content">
+      <a href="/RRHH">Recursos Humanos (RRHH)</a>
+      <a href="/SST">Salud y Seguridad en el Trabajo (SST)</a>
+      <a href="/TI">Soporte Técnico (TI)</a>
+    </div>
+  </div>
+  <a href="/trabaja">Trabaja con nosotros</a>
+  <a href="/nosotros">Acerca de nosotros</a>
+  <a href="/contacto">Solicita tu propuesta</a>
+</nav>
+
+<div class="table">
+  <h2>Servicios TI</h2>
+  <table class="services-table">
+    <thead>
+      <tr>
+        <th>SOPORTE IT</th>
+        <th>ASISTENCIA TECNICA</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <ul>
+            <li>Consultoría Informatíca.</li>
+            <li>Soporte IT Tercerizado.</li>
+            <li>Ssoporte en el sitio.</li>
+            <li>Mesa de Ayuda.</li>
+            <li>Soporte Especializado NV 1/2.</li>
+            <li>Soporte Especializado NV 3.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Instalación y Reparacion de SOFTWARE.</li>
+            <li>Instalación Y Reparacion de HARDWARE.</li>
+            <li>Servicio Tecnico de Computador Portátil.</li>
+            <li>Servicio Tecnico de Computador de Mesa.</li>
+            <li>Mantenimientos Preventivos y Predictivos.</li>
+            <li>Servicios de Instalacion y Configuracion.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+</section>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Consultores Group MM S.A.S</h4>
+        <p>Soluciones en Gestión del Talento Humano y SST.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Enlaces</h4>
+        <a href="/#">Inicio</a>
+        <a href="/nosotros">Acerca de nosotros</a>
+        <a href="/trabaja">Trabaja con nosotros</a>
+        <a href="/contacto">Solicita tu propuesta</a>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>Correo: consultorgroupmm@gmail.com</p>
+        <p>Teléfono: +57 316 816 3722</p>
+        <p>Ciudad: Bogotá, Colombia</p>
+        <p>Dirección: Calle 27 Sur # 7-39 </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Consultores Group MM S.A.S. Todos los derechos reservados.
+    </div>
+  </footer>
+</body>
+</html>

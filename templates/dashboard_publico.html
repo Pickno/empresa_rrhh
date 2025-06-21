@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <title>Consultores MM</title>
+</head>
+
+<body>
+  <nav class="navbar">
+  <div class="logo">
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" height="100">
+    <span class="TConsultores">Consultores Group MM S.A.S</span>
+  </div>
+
+  <div class="dropdown">
+    <a href="#">Servicios</a>
+    <div class="dropdown-content">
+      <a href="/RRHH">Recursos Humanos (RRHH)</a>
+      <a href="/SST">Salud y Seguridad en el Trabajo (SST)</a>
+      <a href="/TI">Soporte Técnico (TI)</a>
+    </div>
+  </div>
+  
+  <a href="/trabaja">Trabaja con nosotros</a>
+  <a href="/nosotros">Acerca de nosotros</a>
+  <a href="/contacto">Solicita tu propuesta</a>
+</nav>
+
+
+  <section class="valores-corporativos">
+    <h2>Quienes somos</h2>
+    <p class="text">
+      Somos una empresa dedicada a ofrecer soluciones en gestión del talento humano y seguridad y salud en el trabajo, comprometidos con el crecimiento de nuestros clientes y el bienestar de sus equipos.
+    </p>
+    <h2>Valores Corporativos</h2>
+    
+ <!-- tarjetas de valores -->
+    <div class="valores-container">
+    <div class="valor-card">
+  <div class="valor-icon"><i data-feather="shield"></i></div>
+  <div class="valor-title">Integridad</div>
+  <p class="valor-text">Actuamos con ética, transparencia y responsabilidad en todas nuestras acciones y relaciones.</p>
+</div>
+
+<div class="valor-card">
+  <div class="valor-icon"><i data-feather="heart"></i></div>
+  <div class="valor-title">Compromiso</div>
+  <p class="valor-text">Nos involucramos con pasión en cada proyecto, enfocados en generar valor real y sostenible para nuestros clientes.</p>
+</div>
+
+<div class="valor-card">
+  <div class="valor-icon"><i data-feather="award"></i></div>
+  <div class="valor-title">Excelencia</div>
+  <p class="valor-text">Buscamos la mejora continua, brindando servicios de alta calidad y soluciones efectivas.</p>
+</div>
+
+<div class="valor-card">
+  <div class="valor-icon"><i data-feather="cpu"></i></div>
+  <div class="valor-title">Innovación</div>
+  <p class="valor-text">Aplicamos ideas y herramientas innovadoras para transformar la gestión del talento y fortalecer la cultura de prevención.</p>
+</div>
+<div class="valor-card">
+  <div class="valor-icon"><i data-feather="users"></i></div>
+  <div class="valor-title">Empatía</div>
+  <p class="valor-text">Entendemos las necesidades de las personas y organizaciones, promoviendo ambientes laborales humanos y saludables.</p>
+</div>
+<div class="valor-card">
+  <div class="valor-icon"><i data-feather="lock"></i></div>
+  <div class="valor-title">Confidencialidad</div>
+  <p class="valor-text">Protegemos la información de nuestros clientes con profesionalismo y total discreción.</p>
+</div>
+<div class="valor-card">
+  <div class="valor-icon"><i data-feather="activity"></i></div>
+  <div class="valor-title">Prevención y Bienestar</div>
+  <p class="valor-text">Fomentamos una cultura orientada a la seguridad, salud y el bienestar integral de los trabajadores.</p>
+</div>
+    </div>
+  <div class="enfoque">
+    <h2>enfoque de trabajo</h2s>
+    <img src="{{ url_for('static', filename='enfoque2.png') }}" alt="enfoque2" height="100">
+  </div>
+  <div class="aliados">
+  <h2>Nuestros Aliados Estratégicos</h2>
+  <div class="slider-container">
+    <button class="slider-btn left" onclick="scrollAliados(-1)">‹</button>
+
+    <div class="slider" id="slider-aliados">
+      <a href="https://fupad.org">
+        <img src="{{ url_for('static', filename='FP.png') }}" alt="FP">
+        <p class="nombre-aliado">FUNDACION PANAMERICANA <BR>PARA EL DESARROLLO</p>
+      </a>
+      <a href="https://riverosbazzani.co">
+        <img src="{{ url_for('static', filename='RB.png') }}" alt="RB">
+        <p class="nombre-aliado">RIVEROS BAZZANI <BR>ABOGADOS</p>
+      </a>
+      <a href="https://www.mct.com.co/es">
+        <img src="{{ url_for('static', filename='MCT.png') }}" alt="MCT">
+        <p class="nombre-aliado">MCT<BR> TRASNPORTADORA</p>
+      </a>
+    </div>
+    <button class="slider-btn right" onclick="scrollAliados(1)">›</button>
+  </div>
+  </div>
+</section>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Consultores Group MM S.A.S</h4>
+        <p>Soluciones en Gestión del Talento Humano y SST.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Enlaces</h4>
+        <a href="/#">Inicio</a>
+        <a href="/nosotros">Acerca de nosotros</a>
+        <a href="/trabaja">Trabaja con nosotros</a>
+        <a href="/contacto">Solicita tu propuesta</a>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>Correo: consultorgroupmm@gmail.com</p>
+        <p>Teléfono: +57 316 816 3722</p>
+        <p>Ciudad: Bogotá, Colombia</p>
+        <p>Dirección: Calle 27 Sur # 7-39 </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Consultores Group MM S.A.S. Todos los derechos reservados.
+    </div>
+  </footer>
+  <script>
+  feather.replace()
+
+  function scrollAliados(direccion) {
+    const slider = document.getElementById('slider-aliados');
+    const scrollCantidad = 200; // píxeles por clic
+    slider.scrollBy({
+      left: direccion * scrollCantidad,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+
+</body>
+</html>
