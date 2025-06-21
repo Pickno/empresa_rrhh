@@ -80,7 +80,7 @@ body {
   left: 0;
   border-radius: 10px;
   display: none;
-  background-color: #89b8f5;
+  background: linear-gradient(to right, #4d88d6, #4DD6C0);
   min-width: 220px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
@@ -438,7 +438,7 @@ h2 {
 /* impacto principal */
 
 .presentacion {
-  background-image: url('../static/fondo_inicio.jpg'); /* reemplaza con tu imagen */
+  background-image: url('../static/fondo_inicio2.jpg'); 
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -446,13 +446,14 @@ h2 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: black;
   padding: 0 20px;
 }
 
 .contenido-presentacion h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: #037cec;
 }
 
 .contenido-presentacion p {
@@ -461,6 +462,7 @@ h2 {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  color: white;
 }
 
 .btn-solicita {
