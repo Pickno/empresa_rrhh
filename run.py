@@ -102,8 +102,8 @@ def trabaja():
         nombre = request.form['nombre']
         correo = request.form['correo']
         telefono = request.form['telefono']
-        perfil = request.form['perfil']
-        archivo = request.files['hoja_vida']
+        perfil = request.form['mensaje']
+        archivo = request.files['cv']
         
         if archivo:
             filename = secure_filename(archivo.filename)
@@ -147,9 +147,3 @@ with app.app_context():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-if __name__ == "__main__":
-    app.run()
-
-
-
