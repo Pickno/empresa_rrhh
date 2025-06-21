@@ -434,3 +434,45 @@ h2 {
   color: #037cec;
   margin-bottom: 30px;
 }
+
+/* impacto principal */
+
+.presentacion {
+  background-image: url('../static/fondo_inicio.jpg'); /* reemplaza con tu imagen */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.contenido-presentacion h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contenido-presentacion p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-solicita {
+  background-color: #4DD6C0;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-solicita:hover {
+  background-color: #38b0a4;
+}
